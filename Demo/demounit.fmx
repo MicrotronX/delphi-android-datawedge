@@ -1,0 +1,58 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 335
+  ClientWidth = 296
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object Button1: TButton
+    Position.X = 4.000000000000000000
+    Position.Y = 20.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = '1- Register Receiver'
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Position.X = 4.000000000000000000
+    Position.Y = 68.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = '2-START Scanning'
+    OnClick = Button2Click
+  end
+  object Edit1: TEdit
+    Touch.InteractiveGestures = [LongTap, DoubleTap]
+    TabOrder = 5
+    Position.X = 4.000000000000000000
+    Position.Y = 120.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 32.000000000000000000
+    Size.PlatformDefault = False
+    TextPrompt = 'tEdit field'
+  end
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Position.X = 4.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 250.000000000000000000
+    Size.Height = 125.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Viewport.Width = 242.000000000000000000
+    Viewport.Height = 117.000000000000000000
+  end
+  object BroadcastReceiver1: TBroadcastReceiver
+    Left = 232
+    Top = 268
+  end
+end
